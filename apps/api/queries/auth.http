@@ -1,0 +1,26 @@
+### POST create an account
+POST {{host}}:{{port}}/auth/register
+Content-Type: application/json
+
+{
+  "username": "new@user.com",
+  "password": "password$strong"
+}
+
+### POST login request (valid user)
+POST {{host}}:{{port}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "new@user.com",
+  "password": "password$strong"
+}
+
+### POST login request (invalid user)
+POST {{host}}:{{port}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "not-existing@user.com",
+  "password": "password$strong"
+}

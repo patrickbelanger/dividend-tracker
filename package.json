@@ -4,7 +4,7 @@
   "dependencies": {
     "@nestjs/config": "^3.2.3",
     "@nestjs/typeorm": "^10.0.2",
-    "turbo": "^2.0.11"
+    "turbo": "^2.0.12"
   },
   "scripts": {
     "start:dev": "turbo run start:dev",
